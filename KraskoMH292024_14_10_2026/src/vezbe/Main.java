@@ -58,6 +58,11 @@ public class Main {
 		
 	}
 	
+	
+	public static void cetvrtaVezba() {
+		
+		
+	}
 	public static void main(String[] args) {
 		// prvaVezba();
 		//drugaVezba();
