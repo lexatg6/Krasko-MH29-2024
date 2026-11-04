@@ -6,6 +6,24 @@ public class Rectangle {
 	private int heigth;
 	private boolean selected;
 	
+	public Rectangle() {
+		
+	}
+	public Rectangle(Point upperLeft,int width, int heigth) {
+		this.width = width;
+		this.heigth = heigth;
+		this.upperLeft = upperLeft;
+	}
+	public Rectangle(Point upperLeft, int width, int heigth, boolean selected) {
+		this(upperLeft, width, heigth);
+		this.selected = selected;
+	}
+	
+	public String toString() {
+		return String.format("(%s, %s, %s, %s)",
+				upperLeft.getX(), upperLeft.getY(), width, heigth);
+				
+	}
 	
 	
 	

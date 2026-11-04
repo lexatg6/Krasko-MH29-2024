@@ -10,6 +10,12 @@ public class line {
 		return startPoint.distance(endPoint);
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("(%s. %s) -> (%s, %s)",
+		startPoint.getX(), startPoint.getY(),endPoint.getX(),endPoint.getY());
+	}
+	
 	public Point getstartPoint() {
 		return startPoint;
 	}
