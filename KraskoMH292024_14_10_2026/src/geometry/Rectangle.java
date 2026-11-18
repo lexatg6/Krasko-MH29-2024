@@ -25,8 +25,17 @@ public class Rectangle {
 				
 	}
 	
+	public boolean contains(int x, int y) {
+		return
+		(x>=upperLeft.getX() && x<=upperLeft.getX() + width)
+		&&
+		(y>=upperLeft.getY() && y<=upperLeft.getY() + heigth);
+		
+	}
 	
-	
+	public boolean contains(Point click) {
+		return contains(click.getX(), click.getY());
+	}
 	
 	
 	public Point getUpperLeft() {

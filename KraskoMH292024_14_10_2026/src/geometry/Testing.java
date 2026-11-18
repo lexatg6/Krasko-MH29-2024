@@ -48,39 +48,57 @@ public class Testing {
 	//   System.out.println("Obim je " +r1.circumference()  );
 	 //  System.out.println("Povrsina je " +r1.area()  );
 		
-		Circle c1 = new Circle();
-		c1.setCenter(p1);
+		//Circle c1 = new Circle();
+		///c1.setCenter(p1);
 				
 		
 		// Vezba 5
 	   Rectangle r1 = new Rectangle(new Point(20,20),50,50);
-	   System.out.println(r1.toString());
-	   System.out.println(r1);
-	   System.out.println(r1.equals(r1));
-	   Rectangle r2 = r1;
-	   System.out.println(r1.equals(r2));
+	   //System.out.println(r1.toString());
+	  // System.out.println(r1);
+	  // System.out.println(r1.equals(r1));
+	  // Rectangle r2 = r1;
+	   //System.out.println(r1.equals(r2));
 	   
-	   System.out.println("Da li su pravugaonici klase Object?");
-	   System.out.println(r1 instanceof Object);
+	  // System.out.println("Da li su pravugaonici klase Object?");
+	   //System.out.println(r1 instanceof Object);
 	   // r1 je Rectangle, ali objekat na koji pokazuje je vise stvari istovremeno
 	   
-	   System.out.println("Testiranje toString metode");
-	   System.out.println(p1);
+	  // System.out.println("Testiranje toString metode");
+	  // System.out.println(p1);
 	   p2 = new Point(200,100);
 	   
-	   System.out.println(l1);
-	   System.out.println(r1);
-	   System.out.println(c1);
+	  // System.out.println(l1);
+	  // System.out.println(r1);
+	  // System.out.println(c1);
 	   
-	   System.out.println("Testiranje equals metode : ");
-	   System.out.println(p1.equals(r1));
-	   System.out.println(p1.equals(p2));
+	   //System.out.println("Testiranje equals metode : ");
+	  // System.out.println(p1.equals(r1));
+	   //System.out.println(p1.equals(p2));
 	   
 	   
 	   
 	 //  r1.toString();
 	 //  r1.equals(r1);
 	   
+	   //Vezba 6
+	   Point click = new Point(50,50);
+	   System.out.println(r1.contains(click));
+	   Circle c1 = new Circle(new Point(30,30), 30);
+	  System.out.println(c1.contains(click));
+	   
+	   //Vezba 7
+	   Donut d1 = new Donut(new Point(50,50), 100, 30);
+	   System.out.println("Centar kruga je " + d1.getCenter());
+	   System.out.println("Poluprecnik velikog kruga je " + d1.getRadius());
+	   System.out.println("Povrsina donuta je " + d1.area());
+	   System.out.println(d1);
+	   
+	   System.out.println(d1 instanceof Donut);
+	   System.out.println(d1 instanceof Circle);
+	   System.out.println(d1 instanceof Object);
+	   
+	   System.out.println(c1 instanceof Donut);
 	   
 
 	}

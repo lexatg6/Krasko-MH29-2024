@@ -1,20 +1,32 @@
 package geometry;
 
 public class Circle {
-	private Point center;
-	private int radius;
+	protected Point center;
+	protected int radius;
 	private boolean selected;
 	
+	public Circle() {
+		
+	}
 	
-public Circle() {
-    	
-    }
-public Circle(int radius) {
+	
+
+public Circle(Point center, int radius) {
+	this.center = center;
 	this.radius = radius;
+	
 }
-public Circle(int radius, boolean selected) {
-	this(radius);
+public Circle(Point center, int radius, boolean selected) {
+	this(center,radius);
 	this.selected = selected;
+}
+
+public boolean contains(int x, int y) {
+	return center.distance(new Point(x,y)) <= radius;
+	
+}
+public boolean contains(Point click) {
+	return contains(click.getX(), click.getY());
 }
 @Override
 public String toString() {
@@ -48,6 +60,7 @@ public double area() {
 }
 
 }
+
     
 
 
